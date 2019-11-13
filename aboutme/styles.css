@@ -1,0 +1,62 @@
+body {
+    display: grid;
+    grid-template-rows: 10vh 30vh 40vh 20vh;
+    grid-template-columns: 45vw 50vw;
+    grid-template-areas: "header header"
+        "image background"
+        "image education"
+        "image interests";
+    font-family: lato, sans-serif;
+}
+
+p {
+    font-weight: 400;
+}
+
+header {
+    grid-area: header;
+    height: 1em;
+    padding-left: 1em;
+    font-style: italic;
+}
+
+.image {
+    grid-area: image;
+    max-width: 2em;
+    padding-left: 4em;
+    padding-top: 2em;
+}
+
+img {
+    border-radius: 100px;
+}
+
+.background {
+    grid-area: background;
+}
+
+.education {
+    grid-area: education;
+}
+
+.interests {
+    grid-area: interests;
+}
+
+footer {
+    height: 2vh;
+    padding-top: 8em;
+    padding-bottom: 2em;
+}
+
+a:link {
+    color: darkgray
+}
+
+a:hover {
+    color: dimgray
+}
+
+a:visited {
+    color: gray
+}
