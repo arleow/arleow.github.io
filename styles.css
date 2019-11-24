@@ -1,0 +1,97 @@
+body {
+    display: grid;
+    grid-template-rows: 10vh 10vh 30vh 40vh 20vh;
+    grid-template-columns: 45vw 50vw;
+    grid-template-areas: "menubar menubar"
+        "header header"
+        "image background"
+        "image education"
+        "image interests";
+    font-family: lato, sans-serif;
+}
+
+p {
+    font-weight: 400;
+}
+
+header {
+    grid-area: header;
+    height: 1em;
+    padding-left: 1em;
+    font-style: italic;
+}
+
+.image {
+    grid-area: image;
+    max-width: 2em;
+    padding-left: 4em;
+    padding-top: 2em;
+}
+
+img {
+    border-radius: 100px;
+}
+
+.background {
+    grid-area: background;
+}
+
+.education {
+    grid-area: education;
+}
+
+.interests {
+    grid-area: interests;
+}
+
+footer {
+    height: 2vh;
+    padding-top: 8em;
+    padding-bottom: 2em;
+}
+
+a:link {
+    color: darkgray;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    color: dimgray;
+    text-decoration: none;
+}
+
+a:visited {
+    color: gray;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+.interestlist {
+    list-style-type: disc; 
+}
+
+.menubar {
+    grid-area: menubar;
+    padding-bottom: 1.5em;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0;
+    display: grid; 
+}
+.top {
+    display: inline-block;
+    width: 12em;
+    padding: .5em 1.5em;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    font-size; 200%;
+    background-color: lightyellow;
+}
+.top:hover {
+    background-color: yellow;
+}
