@@ -1,8 +1,9 @@
 body {
     display: grid;
-    grid-template-rows: 10vh 30vh 40vh 20vh;
+    grid-template-rows: 10vh 10vh 30vh 40vh 20vh;
     grid-template-columns: 45vw 50vw;
-    grid-template-areas: "header header"
+    grid-template-areas: "menubar menubar"
+        "header header"
         "image background"
         "image education"
         "image interests";
@@ -50,13 +51,47 @@ footer {
 }
 
 a:link {
-    color: darkgray
+    color: darkgray;
+    text-decoration: none;
+    
 }
 
 a:hover {
-    color: dimgray
+    color: dimgray;
+    text-decoration: none;
 }
 
 a:visited {
-    color: gray
+    color: gray;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+.interestlist {
+    list-style-type: disc; 
+}
+
+.menubar {
+    grid-area: menubar;
+    padding-bottom: 1.5em;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0;
+    display: grid; 
+}
+.top {
+    display: inline-block;
+    width: 12em;
+    padding: .5em 1.5em;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    font-size; 200%;
+    background-color: lightyellow;
+}
+.top:hover {
+    background-color: yellow;
 }
