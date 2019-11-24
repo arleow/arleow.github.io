@@ -1,0 +1,82 @@
+body {
+    display: grid;
+    grid-template-rows: 10vh 60vh 20vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: "menubar"
+        "main"
+        "footer";
+    font-family: lato, sans-serif;
+}
+
+p {
+    font-weight: 400;
+}
+
+header {
+    grid-area: header;
+    height: 1em;
+    padding-left: 1em;
+    font-style: italic;
+}
+
+main {
+    grid-area: main;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    height: 2vh;
+    padding-top: 8em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+a:link {
+    color: darkgray;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    color: dimgray;
+    text-decoration: none;
+}
+
+a:visited {
+    color: gray;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.menubar {
+    grid-area: menubar;
+    padding-bottom: 1.5em;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0;
+    display: grid; 
+}
+.top {
+    display: inline-block;
+    width: 12em;
+    padding: .5em 1.5em;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    font-size; 200%;
+    background-color: lightyellow;
+}
+.top:hover {
+    background-color: yellow;
+}
+
+img {
+    margin-top: 2em;
+    width: 700px;
+}
